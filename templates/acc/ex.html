@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+{% load socialaccount %}
+{% providers_media_js %}
+
+<html>
+<body>
+<a href="{% provider_login_url "google" %}">  Google
+</a>
+</body>
+</html>
+
+
+{% endblock %}
